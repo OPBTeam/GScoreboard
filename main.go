@@ -9,7 +9,7 @@ import (
 	"github.com/df-mc/dragonfly/server/player/chat"
 	"github.com/pelletier/go-toml"
 	"github.com/sirupsen/logrus"
-	"github.com/ops-mcbe-server/gscoreboard/gscoreboard"
+	"github.com/opbteam/gscoreboard/gscoreboard"
 )
 
 func main() {
