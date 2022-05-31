@@ -14,7 +14,7 @@ import "github.com/ops-mcbe-server/gscoreboard/gscoreboard"
 ```go
 score := gscoreboard.Scoreboard{
   Title: "Minecraft server",
-  Line: []string{"Hello world", "Have fun:)"}
+  Line: []string{"Hello world", "Have fun:)"},
   Delay: 5,
 }
 score.Send(*player.Player)
