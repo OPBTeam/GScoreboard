@@ -4,11 +4,11 @@ Simple scoreboard for [dragonfly](https://github.com/df-mc/dragonfly) server
 
 ## Get the package
 ```
-go get github.com/ops-mcbe-server/gscoreboard
+go get github.com/opbteam/gscoreboard
 ```
 # Import the package
 ```golang
-import "github.com/ops-mcbe-server/gscoreboard/gscoreboard"
+import "github.com/opbteam/gscoreboard/gscoreboard"
 ```
 # Create scoreboard
 ```go
