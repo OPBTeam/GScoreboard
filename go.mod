@@ -1,4 +1,4 @@
-module github.com/ops-mcbe-server/gscoreboard
+module github.com/opbteam/gscoreboard
 
 go 1.18
 
