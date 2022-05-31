@@ -2,12 +2,14 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"os"
+
 	"github.com/df-mc/dragonfly/server"
 	"github.com/df-mc/dragonfly/server/player/chat"
 	"github.com/pelletier/go-toml"
 	"github.com/sirupsen/logrus"
-	"io/ioutil"
-	"os"
+	"github.com/ops-mcbe-server/gscoreboard/gscoreboard"
 )
 
 func main() {
@@ -29,9 +31,16 @@ func main() {
 	}
 
 	for {
-		if _, err := srv.Accept(); err != nil {
+		p, err := srv.Accept();
+		if err != nil {
 			return
 		}
+		score := gscoreboard.Scoreboard{
+			Title: "Minecraft Server",
+			Line:  []string{"Hello world", "I am phuongaz"},
+			Delay: 5,
+		}
+		go score.Send(p)
 	}
 }
 
